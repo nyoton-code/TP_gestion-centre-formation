@@ -146,7 +146,7 @@ Cette capture présente les trois tables créées dans phpMyAdmin. Elle permet d
 
 ## Diagramme de classes
 
-![Diagramme de classes](images/uml_diagram.png)
+![Diagramme de classes](images/uml-diagram.png)
 
 Le diagramme représente les trois entités principales du projet : `Formation`, `Etudiant` et `Module`.
 
