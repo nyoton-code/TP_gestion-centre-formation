@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f3f0;
+    font-family: 'DM Sans', sans-serif;
+    color: #292d32;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #202a35;
+    color: white;
+    padding: 25px 18px;
+    flex-shrink: 0;
+}
+
+.sidebar h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+.sidebar h5 i {
+    margin-right: 8px;
+    color: #9aabb8;
+}
+
+.menu-title {
+    color: #929da8;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    display: block;
+    color: #bdc5cc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.sidebar a i {
+    width: 25px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #354452;
+    color: #fff;
+}
+
+
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    background: #fff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e7e5e0;
+}
+
+.topbar h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.content {
+    padding: 30px;
+    min-height: calc(100vh - 110px);
+}
+
+.footer {
+    padding: 18px 30px;
+    color: #888b8e;
+    font-size: 13px;
+    border-top: 1px solid #e7e5e0;
+    background: #fff;
+}
+
+
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #85878a;
+    margin: 0;
+}
+
+.dashboard-card {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #e7e5e0;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.dashboard-card i {
+    color: #637b8c;
+    margin-bottom: 18px;
+}
+
+.dashboard-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard-card p {
+    color: #85878a;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.btn-primary {
+    background: #526b7b;
+    border-color: #526b7b;
+}
+
+.btn-primary:hover {
+    background: #405968;
+    border-color: #405968;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 190px;
+        padding: 20px 10px;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .topbar {
+        padding: 18px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 65px;
+        padding: 20px 8px;
+    }
+
+    .sidebar h5 {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .sidebar h5 i {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .menu-title,
+    .sidebar a {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .sidebar a i {
+        font-size: 17px;
+    }
+}
