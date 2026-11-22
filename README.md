@@ -29,23 +29,20 @@ L'application permet de gérer trois éléments principaux :
 - **Étudiants :** gestion des étudiants et association de chaque étudiant à une formation.
 - **Modules :** gestion des modules et association de chaque module à une formation.
 
-L'objectif est de mettre en pratique les opérations CRUD (Create, Read, Update, Delete), ainsi que la connexion à une base de données MySQL avec PHP et PDO.
 
 ## Technologies utilisées
 
-| Technologie | Utilisation |
-|---|---|
-| PHP | Traitement des données et logique de l'application |
-| MySQL | Stockage et gestion des données |
-| PDO | Connexion à la base de données |
-| HTML5 | Structure des pages |
-| CSS3 | Mise en forme de l'interface |
-| Bootstrap | Mise en page et composants |
-| Font Awesome | Icônes de l'interface |
+* [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+* [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+* [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+* [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
+
 
 ## Structure du projet
 
-Le projet est organisé en plusieurs dossiers afin de séparer les différentes parties de l'application.
+Le projet est organisé en plusieurs dossiers  : 
 
 ```text
 tp7-crud/
@@ -57,6 +54,7 @@ tp7-crud/
 │
 ├── includes/
 │   └── header.php
+|   └── footer.php
 │
 ├── assets/
 │   └── css/
@@ -85,7 +83,7 @@ tp7-crud/
 └── README.md
 ```
 
-Chaque dossier principal contient les fichiers nécessaires à la gestion de son entité. Le dossier `database` contient la connexion PDO, tandis que `includes` permet de partager les éléments communs de l'interface.
+
 
 ## Base de données
 
@@ -142,7 +140,7 @@ Chaque étudiant et chaque module est associé à une seule formation grâce au 
 
 ![Aperçu de la base de données](images/database.png)
 
-Cette capture présente les trois tables créées dans phpMyAdmin. Elle permet de vérifier la structure de la base de données utilisée par l'application.
+
 
 ## Diagramme de classes
 
@@ -158,7 +156,7 @@ L'application propose les fonctionnalités suivantes :
 
 - Affichage des formations, étudiants et modules.
 - Ajout de nouvelles formations.
-- Modification des informations existantes.
+- Modification des informations .
 - Suppression des enregistrements.
 - Association des étudiants à une formation.
 - Association des modules à une formation.
@@ -216,4 +214,3 @@ Cette page présente les modules enregistrés, leurs coefficients et les formati
 
 Ce projet nous a permis de mettre en pratique les notions de PHP, PDO et MySQL à travers une application de gestion utilisant les opérations CRUD.
 
-Il nous a également permis de travailler sur la structuration d'un projet web, la gestion des relations entre les tables et l'affichage des données provenant d'une base de données.
